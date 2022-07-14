@@ -45,6 +45,8 @@ function singleRound(playerSelection, computerSelection) {
                 else{
                     return "You Win! Scissors beat Paper!"
                 }
+            default:
+                return "What? That's neither of the options. Choose rock, paper, OR scissors"
         }
     }
 }
@@ -53,7 +55,7 @@ function game() {
     for(let i = 0; i<5; i++){
         let userInput = prompt("Choose rock, paper or scissors!");
         let computerInput = computerPlay();
-        let result = singleRound(userInput,computerInput);
+        let result = singleRound(userInput.toLowerCase(),computerInput);
         console.log(result)
     }
 }
