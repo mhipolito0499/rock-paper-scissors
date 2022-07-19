@@ -6,7 +6,7 @@ function computerPlay() {
         case 1:
             return "Paper";
         case 2:
-            return "Scissors";
+            return "scissors";
         
     }
 }
